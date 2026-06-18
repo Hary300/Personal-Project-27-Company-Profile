@@ -4,7 +4,7 @@ const HamburgerButton = () => {
   const { isOpen, toggleMenu } = useMobileMenu();
 
   const buttonClasses =
-    'h-1 w-6 bg-neutral-950 rounded-full transition-all duration-200';
+    'h-1 w-6 bg-neutral-950 rounded-full transition-all duration-200 dark:bg-white';
 
   return (
     <button className='flex flex-col gap-1 cursor-pointer' onClick={toggleMenu}>

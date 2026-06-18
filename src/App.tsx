@@ -10,16 +10,19 @@
  */
 
 import MainLayout from './components/layout/MainLayout';
+import DarkProvider from './contexts/dark-mode/DarkProvider';
 import MobileMenuProvider from './contexts/mobile-menu/MobileMenuProvider';
 import HomePage from './pages/HomePage';
 
 function App() {
   return (
-    <MobileMenuProvider>
-      <MainLayout>
-        <HomePage />
-      </MainLayout>
-    </MobileMenuProvider>
+    <DarkProvider>
+      <MobileMenuProvider>
+        <MainLayout>
+          <HomePage />
+        </MainLayout>
+      </MobileMenuProvider>
+    </DarkProvider>
   );
 }
 

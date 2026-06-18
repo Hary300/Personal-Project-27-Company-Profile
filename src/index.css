@@ -187,7 +187,7 @@ html {
 }
 
 body {
-  @apply bg-white text-black dark:bg-black dark:text-white transition-colors duration-300;
+  @apply font-Quicksand bg-white text-black dark:bg-black dark:text-white;
 }
 
 /* Optional: Custom scrollbar styles */
