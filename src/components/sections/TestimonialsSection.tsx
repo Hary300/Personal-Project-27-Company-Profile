@@ -2,7 +2,7 @@ import Container from '../layout/Container';
 
 const TestimonialsSection = () => {
   return (
-    <section>
+    <section id='testimonials'>
       <Container>TestimonialsSection</Container>
     </section>
   );

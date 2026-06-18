@@ -5,7 +5,7 @@ import {
   HeroSection,
   IndustriesSection,
   OurProcessSection,
-  PortfolioSection,
+  ProjectsSection,
   ServicesSection,
   StatsSection,
   TestimonialsSection,
@@ -21,7 +21,7 @@ const HomePage = () => {
         <OurProcessSection />
         <ServicesSection />
         <IndustriesSection />
-        <PortfolioSection />
+        <ProjectsSection />
         <TestimonialsSection />
         <FaqSection />
         <ContactSection />

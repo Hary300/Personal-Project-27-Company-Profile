@@ -1,4 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/AP2j6zZq)
+
 # Company Profile - React Assignment
 
 ## Deskripsi Assignment
@@ -155,7 +156,7 @@ Berdasarkan design Figma, buat sections berikut (sesuaikan dengan design yang di
   ```typescript
   // types/index.ts
   export interface ButtonProps {
-    variant?: "primary" | "secondary";
+    variant?: 'primary' | 'secondary';
     children: React.ReactNode;
     onClick?: () => void;
   }
@@ -303,7 +304,7 @@ Untuk customization, tambahkan `@theme` di `src/index.css`:
 ```css
 @theme {
   --color-primary: #your-color;
-  --font-display: "Your Font";
+  --font-display: 'Your Font';
 }
 ```
 
@@ -386,7 +387,7 @@ A: TailwindCSS v4 menggunakan CSS-based configuration. Tambahkan di `src/index.c
 @theme {
   --color-primary: #your-color;
   --color-secondary: #another-color;
-  --font-display: "Your Font Name";
+  --font-display: 'Your Font Name';
   --spacing-custom: 2.5rem;
 }
 ```
@@ -517,3 +518,7 @@ Langkah Awal:
 Ingat: Focus on learning process, bukan hanya hasil akhir. Jangan takut membuat mistake, karena dari sanalah kita belajar. Ask questions ketika stuck, dan collaborate dengan peers untuk diskusi.
 
 "The only way to learn a new programming language is by writing programs in it."
+
+# My Repo
+
+https://github.com/Hary300/REP-WPH-challenge-7-Hary300-1-result.git
