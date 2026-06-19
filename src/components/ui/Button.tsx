@@ -1,7 +1,7 @@
 import type { ButtonProps } from '../../types';
 
 const Button = ({
-  children,
+  children = "Let's Talk",
   onClick,
   className = '',
   disabled = false,

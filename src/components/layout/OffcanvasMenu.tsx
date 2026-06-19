@@ -10,7 +10,7 @@ const OffcanvasMenu = () => {
     >
       <NavLinks variant='mobile' />
       <a href='#contact' onClick={closeMenu}>
-        <Button>Let's Talk</Button>
+        <Button />
       </a>
     </div>
   );

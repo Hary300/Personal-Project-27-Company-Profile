@@ -1,6 +1,6 @@
 // Button
 interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   onClick?: () => void;
   className?: string;
   disabled?: boolean;
@@ -11,6 +11,7 @@ interface ButtonProps {
 interface LayoutProp {
   children: React.ReactNode;
   variant?: 'default' | 'header' | 'footer';
+  className?: string;
 }
 
 // Navbar
@@ -75,6 +76,11 @@ interface MobileMenuProviderProps {
   children: React.ReactNode;
 }
 
+// Image Vignette Overlay
+interface ImageVignetteOverlayProps {
+  variant: 'dark' | 'light';
+}
+
 export type {
   ButtonProps,
   LayoutProp,
@@ -88,6 +94,7 @@ export type {
   DarkProviderProp,
   MobileMenuContextType,
   MobileMenuProviderProps,
+  ImageVignetteOverlayProps,
 };
 
 /**
