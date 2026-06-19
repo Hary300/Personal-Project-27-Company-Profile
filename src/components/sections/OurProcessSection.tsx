@@ -1,4 +1,4 @@
-import Container from '../layout/Container';
+import Container from '../ui/Container';
 
 const OurProcessSection = () => {
   return (

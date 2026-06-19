@@ -1,4 +1,4 @@
-import { useMobileMenu } from '../../contexts/mobile-menu/useMobileMenu';
+import { useMobileMenu } from '../../../contexts/mobile-menu/useMobileMenu';
 
 const HamburgerButton = () => {
   const { isOpen, toggleMenu } = useMobileMenu();

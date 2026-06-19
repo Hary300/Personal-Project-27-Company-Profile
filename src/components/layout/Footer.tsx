@@ -1,7 +1,7 @@
 import { companyInfo } from '../../data/company';
 import SocialMedia from '../ui/SocialMedia';
-import Container from './Container';
-import Logo from './Logo';
+import Container from '../ui/Container';
+import Logo from '../ui/Logo';
 import NavLinks from './NavLinks';
 
 const Footer = () => {

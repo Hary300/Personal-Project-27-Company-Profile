@@ -1,4 +1,4 @@
-import type { ButtonProps } from '../../types';
+import type { ButtonProps } from '../../../types';
 
 const Button = ({
   children = "Let's Talk",

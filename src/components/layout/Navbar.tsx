@@ -1,10 +1,10 @@
 import type { NavbarProp } from '../../types';
-import Container from './Container';
-import Button from '../ui/Button';
-import HamburgerButton from '../ui/HamburgerButton';
+import Container from '../ui/Container';
+import Button from '../ui/buttons/Button';
+import HamburgerButton from '../ui/buttons/HamburgerButton';
 import NavLinks from './NavLinks';
-import Logo from './Logo';
-import DarkModeButton from '../ui/DarkModeButton';
+import Logo from '../ui/Logo';
+import DarkModeButton from '../ui/buttons/DarkModeButton';
 import { useMobileMenu } from '@/contexts/mobile-menu/useMobileMenu';
 
 const Navbar = ({ scrolled }: NavbarProp) => {
