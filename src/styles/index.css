@@ -185,6 +185,9 @@
 
   --spacing-10xl: 8rem; /* 128px */
   --spacing-11xl: 8.75rem; /* 140px */
+
+  /* animation */
+  --animate-marquee: marquee 20s linear infinite;
 }
 
 /**
@@ -340,4 +343,14 @@ html {
 
 body {
   @apply font-Quicksand bg-white text-neutral-950 dark:bg-black dark:text-neutral-25;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }

@@ -76,8 +76,8 @@ interface MobileMenuProviderProps {
   children: React.ReactNode;
 }
 
-// Image Vignette Overlay
-interface ImageVignetteOverlayProps {
+//  Overlay
+interface OverlayProps {
   variant: 'dark' | 'light';
 }
 
@@ -108,7 +108,7 @@ export type {
   DarkProviderProp,
   MobileMenuContextType,
   MobileMenuProviderProps,
-  ImageVignetteOverlayProps,
+  OverlayProps,
   SectionHeader,
   SectionHeaderProps,
 };

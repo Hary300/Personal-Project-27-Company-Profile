@@ -6,7 +6,7 @@ const StatsSection = () => {
   const headerText = getSectionHeader('stats');
 
   return (
-    <section id='about' className='py-5xl'>
+    <section id='about' className='pb-5xl'>
       <Container>
         <SectionHeader
           title={headerText.title}

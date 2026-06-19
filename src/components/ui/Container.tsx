@@ -5,7 +5,7 @@ const Container = ({
   variant = 'default',
   className = '',
 }: LayoutProp) => {
-  const baseStyles = 'flex px-xl lg:px-11xl';
+  const baseStyles = 'container m-auto flex px-xl lg:px-11xl';
 
   const variantStyles = {
     default: 'py-5xl lg:py-8xl flex-col gap-3xl lg:gap-7xl',

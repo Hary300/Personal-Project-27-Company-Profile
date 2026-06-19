@@ -1,4 +1,9 @@
 export const sectionHeaders = {
+  clients: {
+    title: 'Trusted by Global Innovators & Leading Brands',
+    subtitle: '',
+  },
+
   stats: {
     title: 'End-to-End IT Solutions That Drive Results',
     subtitle:

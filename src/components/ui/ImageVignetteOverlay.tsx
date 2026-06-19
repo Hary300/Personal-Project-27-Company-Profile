@@ -1,6 +1,6 @@
-import type { ImageVignetteOverlayProps } from '@/types';
+import type { OverlayProps } from '@/types';
 
-const ImageVignetteOverlay = ({ variant }: ImageVignetteOverlayProps) => {
+const ImageVignetteOverlay = ({ variant }: OverlayProps) => {
   const colorClass = variant === 'dark' ? 'from-black' : 'from-white';
 
   return (
