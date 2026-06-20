@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import type { LayoutProp } from '../../types';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import OffcanvasMenu from './OffcanvasMenu';
 import { useMobileMenu } from '../../contexts/mobile-menu/useMobileMenu';
+import type { LayoutProps } from '@/types';
 
-const MainLayout = ({ children }: LayoutProp) => {
+const MainLayout = ({ children }: LayoutProps) => {
   const [scrolled, setScrolled] = useState(false);
   const { isOpen } = useMobileMenu();
 

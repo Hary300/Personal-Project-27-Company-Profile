@@ -1,4 +1,3 @@
-import type { NavbarProp } from '../../types';
 import Container from '../ui/Container';
 import Button from '../ui/buttons/Button';
 import HamburgerButton from '../ui/buttons/HamburgerButton';
@@ -6,8 +5,9 @@ import NavLinks from './NavLinks';
 import Logo from '../ui/Logo';
 import DarkModeButton from '../ui/buttons/DarkModeButton';
 import { useMobileMenu } from '@/contexts/mobile-menu/useMobileMenu';
+import type { NavbarProps } from '@/types';
 
-const Navbar = ({ scrolled }: NavbarProp) => {
+const Navbar = ({ scrolled }: NavbarProps) => {
   const { isOpen } = useMobileMenu();
   return (
     <header

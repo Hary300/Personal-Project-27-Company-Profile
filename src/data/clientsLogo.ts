@@ -1,3 +1,4 @@
+import type { ClientsLogo } from '@/types';
 import Adobe from '../assets/images/client-logo/adobe.svg?react';
 import Airbnb from '../assets/images/client-logo/airbnb.svg?react';
 import Databricks from '../assets/images/client-logo/databricks.svg?react';
@@ -7,12 +8,6 @@ import Paypal from '../assets/images/client-logo/paypal.svg?react';
 import Postman from '../assets/images/client-logo/postman.svg?react';
 import Upwork from '../assets/images/client-logo/upwork.svg?react';
 import Zoom from '../assets/images/client-logo/zoom.svg?react';
-
-interface ClientsLogo {
-  id: number;
-  name: string;
-  logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-}
 
 export const clientsLogos: ClientsLogo[] = [
   { id: 1, name: 'Adobe', logo: Adobe },

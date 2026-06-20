@@ -1,7 +1,7 @@
-import { companyInfo } from '../../data/company';
-import type { SocialMediaProp } from '../../types';
+import { companyInfo } from '@/data/company';
+import type { SocialMediaProps } from '@/types';
 
-const SocialMedia = ({ className = '' }: SocialMediaProp) => {
+const SocialMedia = ({ className = '' }: SocialMediaProps) => {
   return (
     <div className={`flex gap-xl ${className}`}>
       {companyInfo.socials.map((social) => {

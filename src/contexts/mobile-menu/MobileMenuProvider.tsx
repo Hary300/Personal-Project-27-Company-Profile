@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MobileMenuContext } from './MobileMenuContext';
-import type { MobileMenuProviderProps } from '../../types';
+import type { MobileMenuProviderProps } from '@/types';
 
 const MobileMenuProvider = ({ children }: MobileMenuProviderProps) => {
   const [isOpen, setIsOpen] = useState(false);

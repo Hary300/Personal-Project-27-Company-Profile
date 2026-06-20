@@ -1,4 +1,4 @@
-import type { CompanyInfo } from '../types';
+import type { CompanyInfo } from '@/types';
 import facebookLogo from '../assets/icons/social-media/fb.svg?react';
 import instagramLogo from '../assets/icons/social-media/ig.svg?react';
 import linkedinLogo from '../assets/icons/social-media/lnk.svg?react';

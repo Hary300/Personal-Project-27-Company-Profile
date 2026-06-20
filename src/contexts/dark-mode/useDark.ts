@@ -4,9 +4,10 @@ import { DarkContext } from './DarkContext';
 export const useDark = () => {
   const context = useContext(DarkContext);
 
-  if (!context) {
-    throw new Error('useDark must be used within DarkProvider');
-  }
+  // using this code causes error after ctrl + s in this file
+  // if (!context) {
+  //   throw new Error('useDark must be used within DarkProvider');
+  // }
 
-  return context;
+  return context || { isDark: false, toggleDark: () => {} };
 };

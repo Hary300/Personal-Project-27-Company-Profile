@@ -20,7 +20,7 @@ const StatsSection = () => {
               key={stat.id}
               className='flex flex-col justify-center items-center gap-sm p-xl size-[clamp(172.5px,19vw,275px)] rounded-full bg-neutral-50 dark:bg-neutral-950 border border-[#DEDCDC] dark:border-neutral-900 group hover:scale-105 transition-all duration-300 cursor-pointer'
             >
-              <p className='font-bold text-display-lg text-primary-200 lg:text-display-2xl group-hover:animate-bounce'>
+              <p className='font-bold text-display-lg text-primary-200 lg:text-display-2xl group-hover:animate-bounce group-active:animate-spin'>
                 {stat.value}
               </p>
               <p className='max-w-[140.5px] lg:max-w-60.75 font-semibold text-sm text-center lg:text-xl'>
