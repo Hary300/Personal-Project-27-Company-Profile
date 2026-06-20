@@ -31,8 +31,20 @@ export interface Industry {
   description: string;
   image: string;
 }
+
 export interface Project {
   id: number;
   title: string;
   image: string;
+}
+
+export interface Testimony {
+  id: number;
+  rating: number;
+  quote: string;
+  author: {
+    name: string;
+    role: string;
+    avatar: string;
+  };
 }

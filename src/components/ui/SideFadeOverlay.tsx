@@ -5,7 +5,7 @@ const SideFadeOverlay = ({ variant }: OverlayProps) => {
   return (
     <>
       <div
-        className={`absolute z-5 left-0 inset-y-0 w-20 lg:w-100 bg-linear-to-r ${colorClass}  to-transparent`}
+        className={`absolute z-5 left-0 inset-y-0 w-20 lg:w-50 bg-linear-to-r ${colorClass}  to-transparent`}
       ></div>
       <div
         className={`absolute z-5 right-0 inset-y-0 w-20 lg:w-50 bg-linear-to-l ${colorClass}  to-transparent`}
