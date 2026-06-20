@@ -7,7 +7,12 @@ const FaqSection = () => {
   return (
     <section id='faq'>
       <Container>
-        <SectionHeader title={headerText.title} align='left' />
+        <SectionHeader
+          title={headerText.title}
+          subtitle={headerText.subtitle}
+          align='left'
+          variant='faq'
+        />
       </Container>
     </section>
   );

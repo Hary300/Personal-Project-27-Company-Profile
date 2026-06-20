@@ -39,7 +39,7 @@ export const sectionHeaders = {
 
   faq: {
     title: 'Need Help? Start Here.',
-    subtitle: '',
+    subtitle: 'Everything you need to know — all in one place.',
   },
 
   contact: {

@@ -8,4 +8,5 @@ export interface SectionHeaderProps {
   title: string;
   subtitle?: string;
   align?: 'center' | 'left';
+  variant?: 'default' | 'faq';
 }
