@@ -10,13 +10,13 @@ const Button = ({
 }: ButtonProps) => {
   // Base styles yang selalu applied
   const baseStyles =
-    'w-full font-bold p-2 font-medium rounded-full transition-all duration-200 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 text-neutral-25 text-sm md:text-base';
+    'w-full font-bold p-2 font-medium rounded-full transition-all duration-200 cursor-pointer  text-neutral-25 text-sm md:text-base';
 
   // Disabled styles
   const disabledStyles = 'opacity-50 cursor-not-allowed';
 
   const variantStyle = {
-    default: 'bg-primary-200 hover:bg-primary-300 active:ring-primary-200',
+    default: 'bg-primary-200 hover:bg-primary-300',
     black: 'bg-black hover:bg-black/80 active:ring-black',
   };
 

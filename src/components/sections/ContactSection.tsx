@@ -22,7 +22,6 @@ import {
 import { useState } from 'react';
 import { modal } from '@/data/modal';
 import type { ModalValue } from '@/types/modal';
-import success from '../../assets/images/success-message.svg';
 
 const ContactSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +44,7 @@ const ContactSection = () => {
   const headerText = getSectionHeader('contact');
 
   const onSubmit = async (data: ContactFormSchema) => {
-    const isSuccess = false;
+    const isSuccess = true;
 
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -111,14 +110,18 @@ const ContactSection = () => {
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent>
           <DialogHeader>
-            <div className='bg-neutral-50 dark:bg-neutral-950 w-full flex justify-center'>
-              <img src={modalValue?.image} alt={`${modalValue?.title} image`} />
+            <div className='bg-neutral-50 dark:bg-neutral-950 w-full flex justify-center py-md'>
+              <img
+                src={modalValue?.image}
+                alt={`${modalValue?.title} image`}
+                className='w-11xl'
+              />
             </div>
-            <div className='flex flex-col gap-2xl items-center text-center px-8'>
-              <DialogTitle className='font-bold text-xl'>
+            <div className='flex flex-col pt-3xl pb-xl items-center text-center px-3xl'>
+              <DialogTitle className='font-bold text-xl leading-4xl'>
                 {modalValue?.title}
               </DialogTitle>
-              <DialogDescription className='font-medium text-md text-neutral-400'>
+              <DialogDescription className='font-medium text-md text-neutral-400 leading-7'>
                 {modalValue?.description}
               </DialogDescription>
             </div>
@@ -126,7 +129,7 @@ const ContactSection = () => {
 
           <DialogFooter>
             <DialogClose asChild>
-              <div className='flex w-full max-w-90.25'>
+              <div className='flex w-full max-w-76.25 lg:max-w-90.25'>
                 <Button>{modalValue?.buttonText}</Button>
               </div>
             </DialogClose>

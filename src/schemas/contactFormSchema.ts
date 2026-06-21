@@ -6,6 +6,6 @@ export const contactFormSchema = z.object({
   message: z
     .string()
     .min(1, 'Message is required')
-    .min(10, 'Message must be at least 10 characters'),
+    .min(10, 'At least 10 characters'),
   service: z.array(z.string()).nonempty('Please select at least one service'),
 });
