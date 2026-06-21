@@ -1,4 +1,4 @@
-import type { contactFormSchema } from '@/schemas/ContactFormSchema';
+import type { contactFormSchema } from '@/schemas/contactFormSchema';
 import type { UseFormRegister } from 'react-hook-form';
 import type z from 'zod';
 

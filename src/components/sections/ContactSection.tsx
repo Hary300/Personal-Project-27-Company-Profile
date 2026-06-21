@@ -2,14 +2,12 @@ import { getSectionHeader } from '@/helpers/getSectionHeader';
 import Container from '../ui/Container';
 import SectionHeader from '../ui/SectionHeader';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from './../../../node_modules/@hookform/resolvers/zod/src/zod';
 import type { ContactFormSchema } from '@/types/contact';
 import Input from '../ui/Input';
 import TextArea from '../ui/TextArea';
 import { checkbox } from '@/data/checkbox';
 import Checkbox from '../ui/Checkbox';
 import Button from '../ui/buttons/Button';
-import { contactFormSchema } from '@/schemas/ContactFormSchema';
 import {
   Dialog,
   DialogClose,
@@ -22,6 +20,8 @@ import {
 import { useState } from 'react';
 import { modal } from '@/data/modal';
 import type { ModalValue } from '@/types/modal';
+import { contactFormSchema } from '@/schemas/contactFormSchema';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 const ContactSection = () => {
   const [isOpen, setIsOpen] = useState(false);
