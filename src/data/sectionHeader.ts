@@ -1,4 +1,6 @@
-export const sectionHeaders = {
+import type { SectionHeader, SectionKey } from '@/types';
+
+export const sectionHeaders: Record<SectionKey, SectionHeader> = {
   clients: {
     title: 'Trusted by Global Innovators & Leading Brands',
     subtitle: '',
