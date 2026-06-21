@@ -19,9 +19,15 @@ import {
   DialogHeader,
   DialogTitle,
 } from '@/components/ui/dialog';
+import { useState } from 'react';
+import { modal } from '@/data/modal';
+import type { ModalValue } from '@/types/modal';
+import success from '../../assets/images/success-message.svg';
 
 const ContactSection = () => {
-  const headerText = getSectionHeader('contact');
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalValue, setModalValue] = useState<ModalValue>();
+
   const {
     register,
     handleSubmit,
@@ -36,9 +42,29 @@ const ContactSection = () => {
     },
   });
 
+  const headerText = getSectionHeader('contact');
+
   const onSubmit = async (data: ContactFormSchema) => {
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
+    const isSuccess = false;
+
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+
+      if (!isSuccess) {
+        throw new Error('Error');
+      }
+      setModalValue(modal.success);
+      console.log('SUCCESS', data);
+    } catch (err) {
+      setModalValue(modal.fail);
+      if (err instanceof Error) {
+        console.log('ERROR', err.message);
+      } else {
+        console.log('Unknown Error');
+      }
+    } finally {
+      setIsOpen(true);
+    }
   };
 
   return (
@@ -82,21 +108,28 @@ const ContactSection = () => {
           </form>
         </Container>
       </section>
-      <Dialog open={true}>
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you&apos;re
-              done.
-            </DialogDescription>
+            <div className='bg-neutral-50 dark:bg-neutral-950 w-full flex justify-center'>
+              <img src={modalValue?.image} alt={`${modalValue?.title} image`} />
+            </div>
+            <div className='flex flex-col gap-2xl items-center text-center px-8'>
+              <DialogTitle className='font-bold text-xl'>
+                {modalValue?.title}
+              </DialogTitle>
+              <DialogDescription className='font-medium text-md text-neutral-400'>
+                {modalValue?.description}
+              </DialogDescription>
+            </div>
           </DialogHeader>
 
           <DialogFooter>
             <DialogClose asChild>
-              {/* <Button variant='outline'>Cancel</Button> */}
+              <div className='flex w-full max-w-90.25'>
+                <Button>{modalValue?.buttonText}</Button>
+              </div>
             </DialogClose>
-            <Button type='submit'>Save changes</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>{' '}
