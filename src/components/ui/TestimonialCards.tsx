@@ -1,6 +1,6 @@
 import type { TestimonialsCardProps } from '@/types';
-import star from '../../assets/icons/star.svg';
-import quoteMark from '../../assets/images/quote.svg';
+import star from '@/assets/icons/star.svg';
+import quoteMark from '@/assets/images/quote.svg';
 
 const TestimonialCards = ({ item }: TestimonialsCardProps) => {
   const rating = item.rating;

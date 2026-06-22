@@ -1,6 +1,6 @@
 import { companyInfo } from '@/data/company';
-import CompanyLogo from '../../assets/images/logo-symbol.svg';
-import { useMobileMenu } from '../../contexts/mobile-menu/useMobileMenu';
+import CompanyLogo from '@/assets/images/logo-symbol.svg';
+import { useMobileMenu } from '@/contexts/mobile-menu/useMobileMenu';
 import type { LogoProps } from '@/types';
 
 const Logo = ({ className = '' }: LogoProps) => {

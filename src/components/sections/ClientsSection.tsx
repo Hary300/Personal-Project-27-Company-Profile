@@ -1,7 +1,7 @@
 import { useDark } from '@/contexts/dark-mode/useDark';
 import { clientsLogos } from '@/data/clientsLogo';
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import SideFadeOverlay from '../ui/SideFadeOverlay';
+import SideFadeOverlay from '@/components/ui/SideFadeOverlay';
 
 const ClientsSection = () => {
   const { isDark } = useDark();
