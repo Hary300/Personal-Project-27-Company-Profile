@@ -1,8 +1,8 @@
 import type { CompanyInfo } from '@/types';
-import facebookLogo from '../assets/icons/social-media/fb.svg?react';
-import instagramLogo from '../assets/icons/social-media/ig.svg?react';
-import linkedinLogo from '../assets/icons/social-media/lnk.svg?react';
-import tiktokLogo from '../assets/icons/social-media/tiktok.svg?react';
+import facebookLogo from '@/assets/icons/social-media/fb.svg?react';
+import instagramLogo from '@/assets/icons/social-media/ig.svg?react';
+import linkedinLogo from '@/assets/icons/social-media/lnk.svg?react';
+import tiktokLogo from '@/assets/icons/social-media/tiktok.svg?react';
 
 export const companyInfo: CompanyInfo = {
   name: 'Your Logo',

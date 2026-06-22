@@ -1,7 +1,7 @@
 import type { Testimony } from '@/types';
-import sarahAvatar from '../assets/images/avatar/sarah.webp';
-import johnAvatar from '../assets/images/avatar/john.webp';
-import emilyAvatar from '../assets/images/avatar/emily.webp';
+import sarahAvatar from '@/assets/images/avatar/sarah.webp';
+import johnAvatar from '@/assets/images/avatar/john.webp';
+import emilyAvatar from '@/assets/images/avatar/emily.webp';
 
 export const testimony: Testimony[] = [
   {

@@ -1,6 +1,6 @@
 import type { NavLinksProps } from '@/types';
-import { useMobileMenu } from '../../contexts/mobile-menu/useMobileMenu';
 import { navItems } from '@/data/navigation';
+import { useMobileMenu } from '@/contexts/mobile-menu/useMobileMenu';
 
 const NavLinks = ({ variant = 'mobile', className = '' }: NavLinksProps) => {
   const { closeMenu } = useMobileMenu();

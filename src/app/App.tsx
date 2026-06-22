@@ -9,10 +9,10 @@
  * Current: Placeholder untuk testing Tailwind setup
  */
 
-import MainLayout from '../components/layout/MainLayout';
-import DarkProvider from '../contexts/dark-mode/DarkProvider';
-import MobileMenuProvider from '../contexts/mobile-menu/MobileMenuProvider';
-import HomePage from '../pages/HomePage';
+import MainLayout from '@/components/layout/MainLayout';
+import DarkProvider from '@/contexts/dark-mode/DarkProvider';
+import MobileMenuProvider from '@/contexts/mobile-menu/MobileMenuProvider';
+import HomePage from '@/pages/HomePage';
 
 function App() {
   return (

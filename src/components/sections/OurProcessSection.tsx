@@ -1,6 +1,6 @@
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import Container from '../ui/Container';
-import SectionHeader from '../ui/SectionHeader';
+import Container from '@/components/ui/Container';
+import SectionHeader from '@/components/ui/SectionHeader';
 import {
   Accordion,
   AccordionContent,

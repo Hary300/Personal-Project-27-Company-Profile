@@ -1,13 +1,13 @@
 import type { Service } from '@/types';
-import webDev from '../assets/icons/IT-solution-webp/website.webp';
-import mobApp from '../assets/icons/IT-solution-webp/mobile.webp';
-import uiUx from '../assets/icons/IT-solution-webp/ux-design.webp';
-import cloud from '../assets/icons/IT-solution-webp/cloud.webp';
-import softDev from '../assets/icons/IT-solution-webp/software.webp';
-import itInfra from '../assets/icons/IT-solution-webp/IT-infrastructure.webp';
-import cyber from '../assets/icons/IT-solution-webp/cybersecurity.webp';
-import qaSolution from '../assets/icons/IT-solution-webp/question.webp';
-import itConsult from '../assets/icons/IT-solution-webp/IT-consulting.webp';
+import webDev from '@/assets/icons/IT-solution-webp/website.webp';
+import mobApp from '@/assets/icons/IT-solution-webp/mobile.webp';
+import uiUx from '@/assets/icons/IT-solution-webp/ux-design.webp';
+import cloud from '@/assets/icons/IT-solution-webp/cloud.webp';
+import softDev from '@/assets/icons/IT-solution-webp/software.webp';
+import itInfra from '@/assets/icons/IT-solution-webp/IT-infrastructure.webp';
+import cyber from '@/assets/icons/IT-solution-webp/cybersecurity.webp';
+import qaSolution from '@/assets/icons/IT-solution-webp/question.webp';
+import itConsult from '@/assets/icons/IT-solution-webp/IT-consulting.webp';
 
 export const service: Service[] = [
   {

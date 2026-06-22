@@ -1,7 +1,7 @@
 import type { Project } from '@/types';
-import port1 from '../assets/images/portfolio/portfolio1.webp';
-import port2 from '../assets/images/portfolio/portfolio2.webp';
-import port3 from '../assets/images/portfolio/portfolio3.webp';
+import port1 from '@/assets/images/portfolio/portfolio1.webp';
+import port2 from '@/assets/images/portfolio/portfolio2.webp';
+import port3 from '@/assets/images/portfolio/portfolio3.webp';
 
 export const project: Project[] = [
   {

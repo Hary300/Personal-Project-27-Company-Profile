@@ -9,7 +9,7 @@ import {
   ServicesSection,
   StatsSection,
   TestimonialsSection,
-} from '../components/sections';
+} from '@/components/sections';
 
 const HomePage = () => {
   return (

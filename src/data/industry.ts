@@ -1,7 +1,7 @@
 import type { Industry } from '@/types';
-import fintechImg from '../assets/images/industry-section/image1.webp';
-import ecomerceImg from '../assets/images/industry-section/image2.webp';
-import healthCareImg from '../assets/images/industry-section/image3.webp';
+import fintechImg from '@/assets/images/industry-section/image1.webp';
+import ecomerceImg from '@/assets/images/industry-section/image2.webp';
+import healthCareImg from '@/assets/images/industry-section/image3.webp';
 
 export const industry: Industry[] = [
   {

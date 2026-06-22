@@ -1,6 +1,6 @@
-import Container from '../ui/Container';
+import Container from '@/components/ui/Container';
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import SectionHeader from '../ui/SectionHeader';
+import SectionHeader from '@/components/ui/SectionHeader';
 import { stats } from '@/data/stats';
 
 const StatsSection = () => {

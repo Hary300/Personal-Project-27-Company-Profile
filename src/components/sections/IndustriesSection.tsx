@@ -1,6 +1,6 @@
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import Container from '../ui/Container';
-import SectionHeader from '../ui/SectionHeader';
+import Container from '@/components/ui/Container';
+import SectionHeader from '@/components/ui/SectionHeader';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { industry } from '@/data/industry';
 
@@ -44,8 +44,8 @@ const IndustriesSection = () => {
                 <img
                   src={item.image}
                   alt={`${item.title} image`}
-                  className='w-full h-full object-center object-cover'
                   loading='lazy'
+                  className='w-full h-full object-center object-cover'
                 />
               </div>
             </TabsContent>

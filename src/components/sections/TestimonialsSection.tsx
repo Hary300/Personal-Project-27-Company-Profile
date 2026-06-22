@@ -1,5 +1,5 @@
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import SectionHeader from '../ui/SectionHeader';
+import SectionHeader from '@/components/ui/SectionHeader';
 import { testimony } from '@/data/testimony';
 import {
   Carousel,
@@ -8,11 +8,11 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 
-import SideFadeOverlay from '../ui/SideFadeOverlay';
+import SideFadeOverlay from '@/components/ui/SideFadeOverlay';
 import { useDark } from '@/contexts/dark-mode/useDark';
 import { useEffect, useState } from 'react';
-import DotIndicator from '../ui/DotIndicator';
-import TestimonialCards from '../ui/TestimonialCards';
+import DotIndicator from '@/components/ui/DotIndicator';
+import TestimonialCards from '@/components/ui/TestimonialCards';
 
 const TestimonialsSection = () => {
   const [api, setApi] = useState<CarouselApi>();

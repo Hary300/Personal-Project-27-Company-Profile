@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import OffcanvasMenu from './OffcanvasMenu';
-import { useMobileMenu } from '../../contexts/mobile-menu/useMobileMenu';
 import type { LayoutProps } from '@/types';
+import { useMobileMenu } from '@/contexts/mobile-menu/useMobileMenu';
 
 const MainLayout = ({ children }: LayoutProps) => {
   const [scrolled, setScrolled] = useState(false);

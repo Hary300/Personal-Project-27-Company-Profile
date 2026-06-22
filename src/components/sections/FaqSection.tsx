@@ -1,6 +1,6 @@
 import { getSectionHeader } from '@/helpers/getSectionHeader';
-import Container from '../ui/Container';
-import SectionHeader from '../ui/SectionHeader';
+import Container from '@/components/ui/Container';
+import SectionHeader from '@/components/ui/SectionHeader';
 import {
   Accordion,
   AccordionContent,
@@ -8,8 +8,8 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { faq } from '@/data/faq';
-import meeting from '../../assets/images/meeting-image.webp';
-import Button from '../ui/buttons/Button';
+import meeting from '@/assets/images/meeting-image.webp';
+import Button from '@/components/ui/buttons/Button';
 
 const FaqSection = () => {
   const headerText = getSectionHeader('faq');
