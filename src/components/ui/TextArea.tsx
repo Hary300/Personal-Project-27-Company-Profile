@@ -1,4 +1,4 @@
-import type { TextAreaProps } from '@/types/contact';
+import type { TextAreaProps } from '@/types';
 
 const TextArea = ({ title, register, errorMessage }: TextAreaProps) => {
   const label =

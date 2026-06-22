@@ -4,6 +4,8 @@ export * from './navigation';
 export * from './company';
 export * from './section';
 export * from './data';
+export * from './contact';
+export * from './modal';
 
 /**
  * Type Definitions

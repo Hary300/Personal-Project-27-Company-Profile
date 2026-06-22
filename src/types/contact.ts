@@ -22,3 +22,9 @@ export interface CheckboxForm {
   content: string;
   errorMessage?: string;
 }
+
+export interface CheckboxProps {
+  items: CheckboxForm[];
+  register: UseFormRegister<ContactFormSchema>;
+  errorMessage?: string;
+}

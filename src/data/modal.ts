@@ -1,6 +1,6 @@
 import successImage from '../assets/images/success-message.svg';
 import failImage from '../assets/images/fail-message.svg';
-import type { ModalKey, ModalValue } from '@/types/modal';
+import type { ModalKey, ModalValue } from '@/types';
 
 export const modal: Record<ModalKey, ModalValue> = {
   success: {

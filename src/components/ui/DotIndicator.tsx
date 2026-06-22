@@ -1,10 +1,4 @@
-import type { EmblaCarouselType } from 'embla-carousel';
-
-interface DotIndicatorProps {
-  count: number;
-  api: EmblaCarouselType | undefined;
-  current: number;
-}
+import type { DotIndicatorProps } from '@/types';
 
 const DotIndicator = ({ count, api, current }: DotIndicatorProps) => {
   return (

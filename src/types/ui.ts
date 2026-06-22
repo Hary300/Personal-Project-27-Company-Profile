@@ -1,4 +1,7 @@
-import type { ReactNode } from 'react';
+import type { ComponentProps, ReactNode } from 'react';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import type { EmblaCarouselType } from 'embla-carousel';
+import type { Testimony } from './data';
 
 export interface ButtonProps {
   children?: ReactNode;
@@ -21,4 +24,20 @@ export interface LogoProps {
 
 export interface OverlayProps {
   variant: 'dark' | 'light';
+}
+
+export interface AccordionTriggerProps extends ComponentProps<
+  typeof AccordionPrimitive.Trigger
+> {
+  iconVariant?: 'plus-minus' | 'chevron';
+}
+
+export interface DotIndicatorProps {
+  count: number;
+  api: EmblaCarouselType | undefined;
+  current: number;
+}
+
+export interface TestimonialsCardProps {
+  item: Testimony;
 }

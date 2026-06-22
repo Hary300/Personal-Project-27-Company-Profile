@@ -3,6 +3,7 @@ import { Accordion as AccordionPrimitive } from 'radix-ui';
 
 import { cn } from '@/lib/utils';
 import { ChevronDown, ChevronUp, Minus, Plus } from 'lucide-react';
+import type { AccordionTriggerProps } from '@/types';
 
 function Accordion({
   className,
@@ -31,12 +32,6 @@ function AccordionItem({
       {...props}
     />
   );
-}
-
-interface AccordionTriggerProps extends React.ComponentProps<
-  typeof AccordionPrimitive.Trigger
-> {
-  iconVariant?: 'plus-minus' | 'chevron';
 }
 
 function AccordionTrigger({

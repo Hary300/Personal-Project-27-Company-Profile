@@ -1,4 +1,4 @@
-import type { CheckboxForm } from '@/types/contact';
+import type { CheckboxForm } from '@/types';
 
 export const checkbox: CheckboxForm[] = [
   {

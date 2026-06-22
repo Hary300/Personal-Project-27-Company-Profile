@@ -1,4 +1,4 @@
-import type { InputProps } from '@/types/contact';
+import type { InputProps } from '@/types';
 
 const Input = ({
   title,

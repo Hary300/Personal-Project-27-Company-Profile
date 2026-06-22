@@ -1,12 +1,8 @@
-import type { Testimony } from '@/types';
+import type { TestimonialsCardProps } from '@/types';
 import star from '../../assets/icons/star.svg';
 import quoteMark from '../../assets/images/quote.svg';
 
-interface TestimonialsSectionProps {
-  item: Testimony;
-}
-
-const TestimonialCards = ({ item }: TestimonialsSectionProps) => {
+const TestimonialCards = ({ item }: TestimonialsCardProps) => {
   const rating = item.rating;
   return (
     <div className='p-px bg-linear-to-br from-primary-200 to-[#DEDCDC] dark:to-neutral-900 from-5% to-30% rounded-2xl '>

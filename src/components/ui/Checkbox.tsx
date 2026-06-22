@@ -1,12 +1,5 @@
-import type { CheckboxForm, ContactFormSchema } from '@/types/contact';
+import type { CheckboxProps } from '@/types';
 import { Check } from 'lucide-react';
-import type { UseFormRegister } from 'react-hook-form';
-
-interface CheckboxProps {
-  items: CheckboxForm[];
-  register: UseFormRegister<ContactFormSchema>;
-  errorMessage?: string;
-}
 
 const Checkbox = ({ items, register, errorMessage }: CheckboxProps) => {
   return (

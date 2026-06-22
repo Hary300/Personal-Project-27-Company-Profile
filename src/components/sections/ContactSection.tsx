@@ -1,35 +1,32 @@
-import { getSectionHeader } from '@/helpers/getSectionHeader';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import Container from '../ui/Container';
 import SectionHeader from '../ui/SectionHeader';
-import { useForm } from 'react-hook-form';
-import type { ContactFormSchema } from '@/types/contact';
 import Input from '../ui/Input';
 import TextArea from '../ui/TextArea';
-import { checkbox } from '@/data/checkbox';
 import Checkbox from '../ui/Checkbox';
 import Button from '../ui/buttons/Button';
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from '@/components/ui/dialog';
-import { useState } from 'react';
-import { modal } from '@/data/modal';
-import type { ModalValue } from '@/types/modal';
+import Modal from '../ui/Modal';
+import { getSectionHeader } from '@/helpers/getSectionHeader';
 import { contactFormSchema } from '@/schemas/contactFormSchema';
+import { checkbox } from '@/data/checkbox';
+import { modal } from '@/data/modal';
 import { zodResolver } from '@hookform/resolvers/zod';
+import type { ContactFormSchema, ModalValue } from '@/types';
 
 const ContactSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [modalValue, setModalValue] = useState<ModalValue>();
+  const [modalValue, setModalValue] = useState<ModalValue>({
+    title: '',
+    description: '',
+    buttonText: '',
+    image: '',
+  });
 
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<ContactFormSchema>({
     resolver: zodResolver(contactFormSchema),
@@ -53,6 +50,7 @@ const ContactSection = () => {
         throw new Error('Error');
       }
       setModalValue(modal.success);
+      reset();
       console.log('SUCCESS', data);
     } catch (err) {
       setModalValue(modal.fail);
@@ -107,35 +105,7 @@ const ContactSection = () => {
           </form>
         </Container>
       </section>
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent>
-          <DialogHeader>
-            <div className='bg-neutral-50 dark:bg-neutral-950 w-full flex justify-center py-md'>
-              <img
-                src={modalValue?.image}
-                alt={`${modalValue?.title} image`}
-                className='w-11xl'
-              />
-            </div>
-            <div className='flex flex-col pt-3xl pb-xl items-center text-center px-3xl'>
-              <DialogTitle className='font-bold text-xl leading-4xl'>
-                {modalValue?.title}
-              </DialogTitle>
-              <DialogDescription className='font-medium text-md text-neutral-400 leading-7'>
-                {modalValue?.description}
-              </DialogDescription>
-            </div>
-          </DialogHeader>
-
-          <DialogFooter>
-            <DialogClose asChild>
-              <div className='flex w-full max-w-76.25 lg:max-w-90.25'>
-                <Button>{modalValue?.buttonText}</Button>
-              </div>
-            </DialogClose>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>{' '}
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} modalValue={modalValue} />
     </>
   );
 };
