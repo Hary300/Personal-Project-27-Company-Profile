@@ -31,9 +31,16 @@ const HeroSection = () => {
       <div className='relative lg:w-130 xl:w-186.75 lg:-mt-21'>
         <ImageVignetteOverlay variant={isDark ? 'dark' : 'light'} />
         <img
-          src={isDark ? DarkHeroImage : LightHeroImage}
+          src={DarkHeroImage}
           alt='Hero image'
           loading='lazy'
+          className={`absolute ${isDark ? 'opacity-100' : 'opacity-0 invisible'}`}
+        />
+        <img
+          src={LightHeroImage}
+          alt='Hero image'
+          loading='lazy'
+          className={isDark ? 'opacity-0 invisible' : 'opacity-100'}
         />
       </div>
     </section>
